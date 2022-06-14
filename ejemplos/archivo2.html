@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resaltador de sintaxis</title>
+    <link href="estilo.css" rel="stylesheet">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <body class="estilo_general"></body>
+    <div class="estilo_general">
+      <span class="numeros">//sample</span>
+      <span class="operadores">code</span>
+      <span class="operadores">to</span>
+      <span class="operadores">write</span>
+      <span class="operadores">100</span>
+      <span class="operadores">random</span>
+      <span class="operadores">ints</span>
+      <span class="operadores">to</span>
+      <span class="operadores">a</span>
+      <span class="operadores">file,</span>
+      <span class="operadores">1</span>
+      <span class="operadores">per</span>
+      <span class="operadores">line</span>
+    </div>
+    <div class="estilo_general"></div>
+    <div class="estilo_general">
+      <span class="operadores">import</span>
+      <span class="operadores">java.io.PrintStream;</span>
+    </div>
+    <div class="estilo_general">
+      <span class="operadores">import</span>
+      <span class="operadores">java.io.IOException;</span>
+    </div>
+    <div class="estilo_general">
+      <span class="operadores">import</span>
+      <span class="operadores">java.io.File;</span>
+    </div>
+    <div class="estilo_general"></div>
+    <div class="estilo_general">
+      <span class="operadores">import</span>
+      <span class="operadores">java.util.Random;</span>
+    </div>
+    <div class="estilo_general"></div>
+    <div class="estilo_general">
+      <span class="operadores">public</span>
+      <span class="operadores">class</span>
+      <span class="operadores">WriteToFile</span>
+    </div>
+    <div class="estilo_general">
+      <span>{</span>
+      <span class="operadores">public</span>
+      <span class="operadores">static</span>
+      <span class="operadores">void</span>
+      <span class="operadores">main(String[]</span>
+      <span class="operadores">args)</span>
+    </div>
+    <div class="estilo_general">
+      <span>{</span>
+      <span class="operadores">try</span>
+    </div>
+    <div class="estilo_general">
+      <span>{</span>
+      <span class="operadores">PrintStream</span>
+      <span class="operadores">writer</span>
+      <span class="numeros">=</span>
+      <span class="operadores">new</span>
+      <span class="operadores">PrintStream(</span>
+      <span class="operadores">new</span>
+      <span class="operadores">File(&quot;randInts.txt&quot;));</span>
+    </div>
+    <div class="estilo_general">
+      <span class="operadores">Random</span>
+      <span class="operadores">r</span>
+      <span class="numeros">=</span>
+      <span class="operadores">new</span>
+      <span class="operadores">Random();</span>
+    </div>
+    <div class="estilo_general">
+      <span class="operadores">final</span>
+      <span class="operadores">int</span>
+      <span class="operadores">LIMIT</span>
+      <span class="numeros">=</span>
+      <span class="operadores">100;</span>
+    </div>
+    <div class="estilo_general"></div>
+    <div class="estilo_general">
+      <span class="operadores">for(int</span>
+      <span class="operadores">i</span>
+      <span class="numeros">=</span>
+      <span class="operadores">0;</span>
+      <span class="operadores">i</span>
+      <span class="numeros">&lt;</span>
+      <span class="operadores">LIMIT;</span>
+      <span class="operadores">i++)</span>
+    </div>
+    <div class="estilo_general">
+      <span>{</span>
+      <span class="operadores">writer.println(</span>
+      <span class="operadores">r.nextInt()</span>
+      <span>);</span>
+    </div>
+    <div class="estilo_general">
+      <span>}</span>
+    </div>
+    <div class="estilo_general">
+      <span class="operadores">writer.close();</span>
+    </div>
+    <div class="estilo_general">
+      <span>}</span>
+    </div>
+    <div class="estilo_general">
+      <span class="operadores">catch(IOException</span>
+      <span class="operadores">e)</span>
+    </div>
+    <div class="estilo_general">
+      <span>{</span>
+      <span class="operadores">System.out.println(&quot;An</span>
+      <span class="operadores">error</span>
+      <span class="operadores">occured</span>
+      <span class="operadores">while</span>
+      <span class="operadores">trying</span>
+      <span class="operadores">to</span>
+      <span class="operadores">write</span>
+      <span class="operadores">to</span>
+      <span class="operadores">the</span>
+      <span class="operadores">file&quot;);</span>
+    </div>
+    <div class="estilo_general">
+      <span>}</span>
+    </div>
+    <div class="estilo_general">
+      <span>}</span>
+    </div>
+    <div class="estilo_general">
+      <span>}</span>
+    </div>
+  </body>
+</html>
